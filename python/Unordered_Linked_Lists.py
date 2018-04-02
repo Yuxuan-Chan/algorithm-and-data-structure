@@ -107,18 +107,23 @@ class UnorderedList:
         previous.set_next(temp)
 
     def pop(self):
-        # 返回最后一个元素
+        # 删除并返回最后一个元素
         previous = None
         current = self.head
-        while current is not None:
+        while current.get_next() is not None:
             previous = current
             current = current.get_next()
+        previous.set_next(None)
         return previous
 
     def pop_pos(self, pos):
+        # 删除并返回指定的元素
         index = 0
+        previous = None
         current = self.head
         while index < pos:
+            previous = current
             current = current.get_next()
             index += 1
+        previous.set_next(current.get_next())
         return current
