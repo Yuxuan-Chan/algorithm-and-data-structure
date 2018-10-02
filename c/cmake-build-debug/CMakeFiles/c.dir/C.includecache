@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Python3_Project/mooc_zhejiang/c/Leetcode_18_4Sum.c
+
+E:/Python3_Project/mooc_zhejiang/c/Leetcode_19_Remove_Nth_Node_From_End_of_List.c
+
+E:/Python3_Project/mooc_zhejiang/c/main.c
+stdio.h
+-
+

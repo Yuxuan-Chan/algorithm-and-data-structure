@@ -127,3 +127,12 @@ class UnorderedList:
             index += 1
         previous.set_next(current.get_next())
         return current
+
+    def print_element(self):
+        current = self.head
+        while current is not None:
+            print(current.get_data())
+            current = current.get_next()
+
+
+
