@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/PTA/week2/function_3.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/function_3.c.obj"
-  "E:/PTA/week2/program_10.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_10.c.obj"
-  "E:/PTA/week2/program_10_discard.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_10_discard.c.obj"
-  "E:/PTA/week2/program_12.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_12.c.obj"
-  "E:/PTA/week2/program_13.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_13.c.obj"
-  "E:/PTA/week2/program_4.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_4.c.obj"
-  "E:/PTA/week2/program_5.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_5.c.obj"
-  "E:/PTA/week2/program_5_discard.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_5_discard.c.obj"
-  "E:/PTA/week2/program_6.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_6.c.obj"
-  "E:/PTA/week2/program_7.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_7.c.obj"
-  "E:/PTA/week2/program_8.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_8.c.obj"
-  "E:/PTA/week2/program_9.c" "E:/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_9.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/function_3.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/function_3.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_10.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_10.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_10_discard.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_10_discard.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_12.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_12.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_13.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_13.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_4.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_4.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_5.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_5.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_5_discard.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_5_discard.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_6.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_6.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_7.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_7.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_8.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_8.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_9.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_9.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
