@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "E:/mooc_zhejiang/PTA/week2/program_10_discard.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_10_discard.c.obj"
   "E:/mooc_zhejiang/PTA/week2/program_12.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_12.c.obj"
   "E:/mooc_zhejiang/PTA/week2/program_13.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_13.c.obj"
+  "E:/mooc_zhejiang/PTA/week2/program_14.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_14.c.obj"
   "E:/mooc_zhejiang/PTA/week2/program_4.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_4.c.obj"
   "E:/mooc_zhejiang/PTA/week2/program_5.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_5.c.obj"
   "E:/mooc_zhejiang/PTA/week2/program_5_discard.c" "E:/mooc_zhejiang/PTA/week2/cmake-build-debug/CMakeFiles/week2.dir/program_5_discard.c.obj"

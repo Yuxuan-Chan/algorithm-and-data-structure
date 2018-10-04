@@ -257,6 +257,33 @@ program_13.c.s:
 	$(MAKE) -f CMakeFiles\week2.dir\build.make CMakeFiles/week2.dir/program_13.c.s
 .PHONY : program_13.c.s
 
+program_14.obj: program_14.c.obj
+
+.PHONY : program_14.obj
+
+# target to build an object file
+program_14.c.obj:
+	$(MAKE) -f CMakeFiles\week2.dir\build.make CMakeFiles/week2.dir/program_14.c.obj
+.PHONY : program_14.c.obj
+
+program_14.i: program_14.c.i
+
+.PHONY : program_14.i
+
+# target to preprocess a source file
+program_14.c.i:
+	$(MAKE) -f CMakeFiles\week2.dir\build.make CMakeFiles/week2.dir/program_14.c.i
+.PHONY : program_14.c.i
+
+program_14.s: program_14.c.s
+
+.PHONY : program_14.s
+
+# target to generate assembly for a file
+program_14.c.s:
+	$(MAKE) -f CMakeFiles\week2.dir\build.make CMakeFiles/week2.dir/program_14.c.s
+.PHONY : program_14.c.s
+
 program_4.obj: program_4.c.obj
 
 .PHONY : program_4.obj
@@ -470,6 +497,9 @@ help:
 	@echo ... program_13.obj
 	@echo ... program_13.i
 	@echo ... program_13.s
+	@echo ... program_14.obj
+	@echo ... program_14.i
+	@echo ... program_14.s
 	@echo ... program_4.obj
 	@echo ... program_4.i
 	@echo ... program_4.s

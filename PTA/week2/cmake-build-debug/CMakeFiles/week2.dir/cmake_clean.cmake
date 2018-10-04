@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/week2.dir/program_10.c.obj"
   "CMakeFiles/week2.dir/program_12.c.obj"
   "CMakeFiles/week2.dir/program_13.c.obj"
+  "CMakeFiles/week2.dir/program_14.c.obj"
   "week2.pdb"
   "week2.exe"
   "week2.exe.manifest"
