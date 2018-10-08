@@ -12,7 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14f0ebc5-7695-40e7-ac8c-8c54b43bc37e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/week2/program_14.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week2/program_14.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week2/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/CMakeFiles/week2.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/week2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/week2.cbp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/week2/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +42,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="3" />
+          <entry key="c" value="4" />
           <entry key="cpp" value="1" />
           <entry key="txt" value="1" />
         </counts>
@@ -40,18 +50,18 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="4" />
+          <entry key="ObjectiveC" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="4329" />
-          <entry key="cpp" value="3768" />
+          <entry key="c" value="6017" />
+          <entry key="cpp" value="3804" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="8097" />
+          <entry key="ObjectiveC" value="9821" />
         </counts>
       </usages-collector>
     </session>
@@ -90,11 +100,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/program_14.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="354" column="12" selection-start-line="354" selection-start-column="12" selection-end-line="354" selection-end-column="12" />
+            <state relative-caret-position="7518">
+              <caret line="358" column="13" selection-start-line="358" selection-start-column="13" selection-end-line="358" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week2/program_15.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -110,6 +129,7 @@
         <option value="$PROJECT_DIR$/week2/program_13.c" />
         <option value="$PROJECT_DIR$/week2/program_14.c" />
         <option value="$PROJECT_DIR$/week2/program_14.cpp" />
+        <option value="$PROJECT_DIR$/week2/program_15.c" />
       </list>
     </option>
   </component>
@@ -120,10 +140,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="523" />
-    <option name="y" value="151" />
-    <option name="width" value="1398" />
-    <option name="height" value="884" />
+    <option name="x" value="601" />
+    <option name="y" value="7" />
+    <option name="width" value="1532" />
+    <option name="height" value="872" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -194,19 +214,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538489668833</updated>
-      <workItem from="1538489671996" duration="36620000" />
+      <workItem from="1538489671996" duration="45598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36620000" />
+    <option name="totallyTimeSpent" value="45598000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="349" y="101" width="932" height="589" extended-state="0" />
+    <frame x="540" y="34" width="1021" height="581" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19450802" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25514874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -264,8 +284,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/program_14.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="354" column="12" selection-start-line="354" selection-start-column="12" selection-end-line="354" selection-end-column="12" />
+        <state relative-caret-position="7518">
+          <caret line="358" column="13" selection-start-line="358" selection-start-column="13" selection-end-line="358" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/program_15.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
         </state>
       </provider>
     </entry>
