@@ -80,7 +80,132 @@ void BFS(Vertex V){  // 层次遍历
 }
 
 
+// 准备好完整地建立一个用邻接矩阵表示的图了
+// 通常我们的输入格式是这样的，就是先给你所有的顶点个数，给你总的边数，然后接下来有这么多行，每行给出一条边的信息，
+// 也就是边的初始点，终点，以及它的权重，等等，针对这个输入格式，我们来写一个函数，叫做BuildGraph,那么在这个函数里面，
+// 我们就是要申明这么一个图，最后在这一个地方把它建好，然后返回
+MGraph BuildGraph(){
+    MGraph Graph;
+    int Nv;
+    scanf("%d", &Nv);  // 首先读进来一个顶点数，这里相信你会有疑问，这个顶点数和边数不是一起给的吗？我干嘛不一起读进来呢？我是有道理的，看到后面就明白了
+    Graph = CreateGraph(Nv);  // 我不需要知道边数，只要有这个顶点数以后，我就可以初始化一个图了，初始化的这个图呢，是有所有的顶点，但是一条边都没有的Graph
+    scanf("%d", &Graph->Ne);   // 然后我再读这个边数，就直接读的是Graph-Ne, 也就是说我不用另外去申明一个临时变量Ne,读进来，然后再把它赋值给Graph->Ne, 我可以在建立了这个Graph之后，直接把它读进来，那么如果读进来的边数等于0的话，说明本身这个图就没有一条边，那么到这一步以后，我们就已经完成了，所以到这里就直接return Graph,就结束了
+    if (Graph->Ne != 0){  // 如果有边的话，我们就要把一条一条边读进来，然后插到图里面去，用Edge,所以在调用它之前呢，我们先要申明一个临时边的结点，去临时的存一下这个边，然后我们就进入了一个简单的循环，在每一次循环里面，我们把一条边的信息读进来，然后调用了我们前面实现的InsertEdge，把这条边插到图里，然后就完成了任务
+        E = (Edge)malloc(sizeof(struct ENode));
+        for(i=0; i<Graph->Ne; i++){
+            scanf("%d %d %d", &E->V1, &E->V2, &E->Weight);
+            InsertEdge(Graph, E);
+        }
+    }
 
+    return Graph;
+}
+
+
+// 考场上的简单实现方法
+int G[MAXN][MAXN], Nv, Ne;
+void BuildGraph(){
+    int i, j, v1, v2, w;
+
+    scanf("%d", &Nv);
+    // CreateGraph
+    for(i=0; i<Nv; i++)
+        for(j=0; j<Nv; j++)
+            G[i][j] = 0
+    scanf("%d", &Ne);
+    for(i=0; i<Ne; i++){
+        scanf("%d %d %d", &v1, &v2, &w);
+        // InsertEdge
+        G[v1][v2] = w;
+        G[v2][v1] = w;
+    }
+}
+
+
+#define MAXN 10
+int G[MAXN][MAXN], Nv, Ne;
+
+
+void BuildGraph(){
+    int i, j, v1, v2, w;
+    scanf("%d", &Nv);
+    for(i=0; i<Nv; i++)
+        for(j=0; j<Nv; j++)
+            G[i][j] = 0;
+    scanf("%d", &Ne);
+    for(i=0; i<Ne; i++){
+        scanf("%d %d %d", &v1, &v2, &w);
+        G[v1][v2] = w;
+        G[v2][v1] = w;
+    }
+}
+
+
+// https://www.cnblogs.com/ranjiewen/p/6701850.html
+// https://blog.csdn.net/wanmeiwushang/article/details/52841900
+// 比较好的方案
+#include <iostream>
+#include <queue>
+#include <cstdio>
+using namespace std;
+#define MaxSize 10
+int Graph[MaxSize][MaxSize], DFS_Visited[MaxSize], BFS_Visited[MaxSize], Nv, Ne;
+
+
+void DFS(int v){
+    DFS_Visited[v] = 1;  // 1表示已经访问过了
+    printf(" %d", v);
+    for(int i=0; i<Nv; i++){
+        if(Graph[v][i]==1&&!DFS_Visited[i]){
+            DFS(i);  // 利用二维数组的一行就是该节点的邻接点，如果那个邻接点还没没访问过则递归访问
+        }
+    }
+}
+
+
+void BFS(int v){
+    BFS_Visited[v] = 1;
+    queue<int> q;
+    q.push(v);
+    printf(" %d", v);
+    while(!q.empty()){
+        int temp = q.front();
+        q.pop();
+        for(int i=0; i<Nv; i++){
+            if(Graph[temp][i]==1&&!BFS_Visited[i]){
+                printf(" %d", i);
+                BFS_Visited[i] = 1;
+                q.push(i);
+            }
+        }
+    }
+}
+
+
+int main(){
+    int V1, V2;
+    scanf("%d %d", &Nv, &Ne);
+    for(int i=0; i<Ne; i++){
+        scanf("%d %d", &V1, &V2);
+        Graph[V1][V2] = 1;
+        Graph[V2][V1] = 1;
+    }
+    for(int i=0; i<Nv; i++){
+        if(!DFS_Visited[i]){
+            putchar('{');
+            DFS(i);
+            printf(" }\n");
+        }
+    }
+    for(int i=0; i<Nv; i++){
+        if(!BFS_Visited[i]){
+            putchar('{');
+            BFS(i);
+            printf(" }\n");
+        }
+    }
+    return 0;
+}
 
 
 
