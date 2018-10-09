@@ -144,6 +144,7 @@ void BuildGraph(){
 // https://www.cnblogs.com/ranjiewen/p/6701850.html
 // https://blog.csdn.net/wanmeiwushang/article/details/52841900
 // 比较好的方案
+// 分割线-------------------------------------------------------------------------------
 #include <iostream>
 #include <queue>
 #include <cstdio>
@@ -206,6 +207,48 @@ int main(){
     }
     return 0;
 }
+// 分割线-----------------------------------------------------------------
+
+// 其实图的表示方法主要分为两种，邻接矩阵和邻接表，下面介绍邻接表
+// 邻接表其实就是数组
+typedef struct GNode *PtrToGNode;
+struct GNode{
+    int Nv;  // 顶点数
+    int Ne;  // 边数
+    AdjList G;  // 这个AdjList是这个邻接表的缩写，那这个类型是要我们自己去定义的，它实际上是一个数组
+};
+typedef PtrToGNode LGraph;
+// 以邻接表方式存储的图类型
+typedef struct AdjVNode *PtrToAdjVNode;
+typedef struct AdjVNode{
+    Vertex AdjV;  // 邻接点下标
+    WeightType Weight;  // 边权重
+    PtrToAdjVNode Next;
+};
+typedef struct Vnode{
+    PtrToAdjVNode FirstEdge;
+    DataType Data;  // 存顶点的数据
+} AdjList[MaxVertexNum];
+/* AdjList是邻接表类型 */
+typedef int Vertex;  // 用顶点下标表示顶点，为整型
 
 
+// LGraph初始化，初始化一个有VertexNum个顶点但没有边的图
+typedef int Vertex;  // 用顶点下标表示顶点，为整型
+LGraph CreateGraph(int VertexNum){  // 那实际上建立LGraph的过程跟建立MGraph的过程原理上来讲是一样的，我们都是初始化一个包含了一个所有的顶点但是一条边都没有的这么一个图，然后在一条边一条边插到这个图里面，最后就把一个完整的图建立起来，只不过是实现这两个步骤的细节略微有点区别，因为它们结构不一样
+    Vertex V, W;
+    LGraph Graph;
+
+    Graph = (LGraph)malloc(sizeof(struct GNode));
+    Graph->Nv = VertexNum;
+    Graph->Ne = 0;
+    // 之前在邻接矩阵里面没有边就表示任意一对顶点之间，二维数组它的值或者是1或者是无穷大，但是在LGraph里面什么叫没有边呢？每一个顶点跟着那个链表都是空的
+    for(V=0; V<Graph->Nv; V++)
+        Graph->G[V].FirstEdge = NULL;
+    // 对于这个Graph里面邻接表每一个顶点V来说，它的FirstEdge，它指向第一条边的指针都是空的，这样我们就初始化了所有空的边，那么这个对应的是一个一重循环，而不是二重循环
+    return Graph;
+}
+
+
+//
 
