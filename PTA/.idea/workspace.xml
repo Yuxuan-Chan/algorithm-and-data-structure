@@ -12,10 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14f0ebc5-7695-40e7-ac8c-8c54b43bc37e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/week2/program_17.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week2/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/week2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/week2.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/program_17.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week2/program_17.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/week2/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +27,9 @@
     <session id="-1417100361">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,22 +48,22 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="8052" />
-          <entry key="cpp" value="7628" />
+          <entry key="cpp" value="11489" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="15680" />
+          <entry key="ObjectiveC" value="19541" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/program_13.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
+            <state relative-caret-position="2205">
               <caret line="105" column="47" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
             </state>
           </provider>
@@ -73,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/program_12.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
+            <state>
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -84,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/program_14.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
+            <state relative-caret-position="3423">
               <caret line="163" column="12" selection-start-line="60" selection-end-line="175" selection-end-column="1" />
               <folding>
                 <element signature="e#1261#1279#0" expanded="true" />
@@ -105,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/program_15.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1838">
+            <state relative-caret-position="2240">
               <caret line="252" column="2" selection-start-line="252" selection-start-column="2" selection-end-line="252" selection-end-column="2" />
             </state>
           </provider>
@@ -114,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week2/program_17.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+            <state relative-caret-position="780">
+              <caret line="359" column="13" lean-forward="true" selection-start-line="359" selection-start-column="13" selection-end-line="359" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -123,13 +122,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week2/program_16.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
+            <state relative-caret-position="2142">
               <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AdjList</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -152,11 +156,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="292" />
-    <option name="y" value="145" />
-    <option name="width" value="1532" />
-    <option name="height" value="884" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="493" />
+    <option name="y" value="79" />
+    <option name="width" value="1446" />
+    <option name="height" value="809" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -228,24 +232,20 @@
       <option name="presentableId" value="Default" />
       <updated>1538489668833</updated>
       <workItem from="1538489671996" duration="76383000" />
+      <workItem from="1539310413025" duration="16192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76383000" />
+    <option name="totallyTimeSpent" value="92575000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="329" y="53" width="964" height="539" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.25441328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="CMake" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -253,10 +253,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,9 +274,16 @@
     <entry file="file://$PROJECT_DIR$/week2/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/week2/program_13.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2205">
+          <caret line="105" column="47" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/week2/program_12.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
+        <state>
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -280,18 +292,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/program_14.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
+        <state relative-caret-position="3423">
           <caret line="163" column="12" selection-start-line="60" selection-end-line="175" selection-end-column="1" />
           <folding>
             <element signature="e#1261#1279#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week2/program_13.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="105" column="47" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -304,22 +309,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/program_16.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
+        <state relative-caret-position="2142">
           <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/program_15.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1838">
+        <state relative-caret-position="2240">
           <caret line="252" column="2" selection-start-line="252" selection-start-column="2" selection-end-line="252" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/program_17.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+        <state relative-caret-position="780">
+          <caret line="359" column="13" lean-forward="true" selection-start-line="359" selection-start-column="13" selection-end-line="359" selection-end-column="13" />
         </state>
       </provider>
     </entry>
