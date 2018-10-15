@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/mooc_zhejiang/PTA/week2/Forwards_on_Weibo.cpp">
+			<Option target="week2"/>
+		</Unit>
 		<Unit filename="E:/mooc_zhejiang/PTA/week2/function_3.c">
 			<Option target="week2"/>
 		</Unit>
