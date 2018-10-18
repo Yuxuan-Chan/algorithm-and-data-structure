@@ -1,27 +1,164 @@
 //
 // Created by zhang on 2018/10/16.
-//
+// https://www.cnblogs.com/ranjiewen/p/6719005.html
+// 这块知识确实有点薄弱
+#include <iostream>
 #include <cstdio>
+#include <cstdlib>
 using namespace std;
-struct node{
-    int id, layer;
+
+
+#define MaxVertexNum 100  // 最大顶点数设为100
+#define INFINITY 65535  // 设为双字节无符号正数的最大值65535
+typedef int Vertex;  // 用顶点下标表示顶点，为整型
+typedef int WeightType;  // 边的权值设为整型
+
+
+/*边的定义*/
+typedef struct ENode *PtrToENode;
+struct ENode{
+    Vertex V1, V2;  // 有向边<V1, V2>
+    WeightType Weight;  // 权重
 };
-#define MaxSize 101
-int Graph[MaxSize][MaxSize], N, M;
+typedef PtrToENode Edge;
 
 
-void initGraph(int n){
-    for(int i=1; i<n; i++)
-        for(int j=1; j<n; j++)
-            Graph[i][j] = 0;
+/*图结点的定义*/
+typedef struct GNode *PtrToGNode;
+struct GNode{
+    int Nv;  // 顶点数
+    int Ne;  // 边数
+    WeightType G[MaxVertexNum][MaxVertexNum];  // 邻接矩阵
+};
+typedef PtrToGNode MGraph;  // 以邻接矩阵存储的图类型
+
+
+MGraph CreateGraph(int VertexNum);
+void InsertEdge(MGraph Graph, Edge E);
+MGraph BuildGraph();
+void Floyd(MGraph Graph, WeightType D[][MaxVertexNum]);
+WeightType FindMaxDist(WeightType D[][MaxVertexNum], Vertex i, int N);
+void FindAnimal(MGraph Graph);
+
+
+int main()
+{
+    MGraph graph;
+    graph = BuildGraph();
+    FindAnimal(graph);
+    return 0;
 }
 
 
-void insertEdge(int i, int j, int weight){
-    Graph[i][j] = weight;
-    Graph[j][i] = weight;
+MGraph CreateGraph(int VertexNum)
+{
+    /* 初始化一个有VertexNum个顶点但没有边的图 */
+    Vertex V, W;
+    MGraph Graph;
+
+    Graph = (MGraph)malloc(sizeof(struct GNode));
+    Graph->Nv = VertexNum;
+    Graph->Ne = 0;
+    /*初始化邻接矩阵*/
+    /*注意: 这里默认顶点编号从0开始，到(Graph->Nv-1)*/
+    for(V=0; V<Graph->Nv; V++)
+        for(W=0; W<Graph->Nv; W++)
+            Graph->G[V][W] = INFINITY;
+
+    return Graph;
 }
 
+
+void InsertEdge(MGraph Graph, Edge E)
+{
+    /*插入边<V1, V2>*/
+    Graph[E->V1][E->V2] = E->Weight;
+    /*若是无向图, 还要插入边<V2, V1>*/
+    Graph[E->V2][E->V1] = E->Weight;
+}
+
+
+MGraph BuildGraph()
+{
+    MGraph Graph;
+    Edge E;
+    int Nv, i;
+
+    scanf("%d", &Nv);  /*读入顶点个数*/
+    Graph = CreateGraph(Nv);  /*初始化有Nv个顶点但没有边的图*/
+
+    scanf("%d", &(Graph->Ne));  /*读入边数*/
+    if(Graph->Ne != 0){  /*如果有边*/
+        E = (Edge)malloc(sizeof(struct ENode));  /*建立边节点*/
+        /*读入边，格式为“起点 终点 权重”，插入邻接矩阵*/
+        for(i=0; i<Graph->Ne; i++){
+            scanf("%d %d %d", &E->V1, &E->V2, &E->Weight);
+            E->V1--;  // 编号从0开始
+            E->V2--;
+            /* 注意：如果权重不是整型，Weight的读入格式要改 */
+            InsertEdge(Graph, E);
+        }
+    }
+
+    return Graph;
+}
+
+
+/*邻接矩阵存储 - 多源最短路算法*/
+void Floyd(MGraph Graph, WeightType D[][MaxVertexNum])
+{
+    // Floyd算法定义了一个二维数组，也就是一个矩阵
+    Vertex i, j, k;
+
+    /*初始化*/
+    for(i=0; i<Graph->Nv; i++)
+        for(j=0; j<Graph->Nv; j++)
+            D[i][j] = Graph->G[i][j];
+
+    for(k=0; k<Graph->Nv; k++)
+        for(i=0; i<Graph->Nv; i++)
+            for(j=0; j<Graph->Nv; j++)
+                if(D[i][k]+D[k][j]<D[i][j]){
+                    D[i][j] = D[i][k]+D[k][j];
+                }
+
+}
+
+
+void FindAnimal(MGraph Graph)
+{
+    WeightType D[MaxVertexNum][MaxVertexNum], MaxDist, MinDist;
+    Vertex Animal;
+
+    Floyd(Graph, D);
+
+    MinDist = INFINITY;
+    for(Vertex i=0; i<Graph->Nv; i++){
+        MaxDist = FindMaxDist(D, i, Graph->Nv);
+        if(MaxDist==INFINITY){  //说明有从i无法变出的动物 //表示图有不连通的，该动物不能变成任何其他动物
+            printf("0\n");
+            return;
+        }
+        if(MinDist>MaxDist){  //找到最长距离更小的动物
+            MinDist = MaxDist;  //更新距离
+            Animal = i+1;  // 记录编号
+        }
+    }
+    printf("%d %d\n", Animal, MinDist);
+}
+
+
+WeightType FindMaxDist(WeightType D[][MaxVertexNum], Vertex i, int N)
+{
+    WeightType MaxDist;
+    MaxDist = 0;
+    for(Vertex j=0; j<N; j++){  //找出i到其他动物j的最长距离
+        if(i!=j&&D[i][j]>MaxDist){
+            MaxDist = D[i][j];
+        }
+    }
+    return MaxDist;
+}
 
 /*
  * void BFS(Vertex S)

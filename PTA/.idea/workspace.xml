@@ -12,10 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14f0ebc5-7695-40e7-ac8c-8c54b43bc37e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/week2/program_18.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week2/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/cmake-build-debug/week2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/week2/cmake-build-debug/week2.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week2/program_18.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week2/program_18.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/week2/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,12 +47,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="8052" />
-          <entry key="cpp" value="16386" />
+          <entry key="cpp" value="18561" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="24438" />
+          <entry key="ObjectiveC" value="26613" />
         </counts>
       </usages-collector>
     </session>
@@ -142,8 +139,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week2/program_18.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="97" column="93" selection-start-line="97" selection-start-column="93" selection-end-line="97" selection-end-column="93" />
+            <state relative-caret-position="-3528">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -179,10 +176,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2041" />
-    <option name="y" value="189" />
-    <option name="width" value="1061" />
-    <option name="height" value="566" />
+    <option name="x" value="633" />
+    <option name="y" value="64" />
+    <option name="width" value="1932" />
+    <option name="height" value="957" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -254,15 +251,15 @@
       <option name="presentableId" value="Default" />
       <updated>1538489668833</updated>
       <workItem from="1538489671996" duration="76383000" />
-      <workItem from="1539310413025" duration="47687000" />
+      <workItem from="1539310413025" duration="57265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124070000" />
+    <option name="totallyTimeSpent" value="133648000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2166" y="155" width="1061" height="566" extended-state="0" />
+    <frame x="422" y="43" width="1288" height="638" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2542373" />
@@ -359,8 +356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week2/program_18.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="97" column="93" selection-start-line="97" selection-start-column="93" selection-end-line="97" selection-end-column="93" />
+        <state relative-caret-position="-3528">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
