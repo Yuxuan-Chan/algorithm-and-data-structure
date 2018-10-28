@@ -205,7 +205,7 @@ void initData(vector<Point> &allPoint, int N){  // 读入数据
     for(int i=0; i<N; i++){
         cin>>x>>y;
         d=sqrt(x*x+y*y);
-        if (max(abs(x), abs(y)) >= 50 || max(abs(x), abs(y)) < 7.5)	//此处是为了淘汰掉那些不在水中的点；
+        if (max(abs(x), abs(y)) >= 50 || max(abs(x), abs(y)) <= 7.5)	//此处是为了淘汰掉那些不在水中的点；
             continue;
         temp.x = x;
         temp.y = y;
@@ -237,3 +237,23 @@ int main(){
 
     return 0;
 }
+
+
+// 因为这题是有权图的单源最短路算法
+// 引出Dijkstra算法，每次从没有收录的顶点中收录一个dist最小的把它收进集合就好，这种思想就是贪心算法的思想
+/* void Dijkstra(Vertex s)
+ * {
+ *  while(1){
+ *    V = 未收录顶点中dist最小者
+ *    if(这样的V不存在)
+ *      break;
+ *    collected[V] = true;
+ *    for(V的每个邻接点W)
+ *      if(collected[W] == false)
+ *        if(dist[V]+E<v, w> < dist[W]){
+ *          dist[W] = dist[V] + E<v, w>;
+ *          path[W] = V;
+ *        }
+ *  }
+ * }
+ * */
